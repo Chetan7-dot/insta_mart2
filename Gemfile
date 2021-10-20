@@ -6,7 +6,7 @@ ruby '2.7.3'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.4'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3', '~> 1.4'
+# gem 'sqlite3', '~> 1.4'
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
 # Use SCSS for stylesheets
@@ -69,6 +69,12 @@ end
 group :development, :test do
   gem 'rspec-rails', '~> 5.0.0'
   gem 'shoulda-matchers', '~> 3.1', '>= 3.1.1'
+end
+group :production do 
+  gem 'pg', '~> 1.2.3'
+end
+group :development, :test do 
+  gem 'sqlite3'    #gem to use in development-test environment
 end
 group :test do
   # Adds support for Capybara system testing and selenium driver

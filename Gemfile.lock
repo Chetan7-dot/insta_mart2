@@ -145,6 +145,7 @@ GEM
     pay (3.0.22)
       rails (>= 6.0.0)
     pdf-core (0.9.0)
+    pg (1.2.3)
     prawn (2.4.0)
       pdf-core (~> 0.9.0)
       ttfunk (~> 1.7)
@@ -299,6 +300,7 @@ DEPENDENCIES
   listen (~> 3.3)
   paddle_pay (~> 0.1)
   pay (~> 3.0)
+  pg (~> 1.2.3)
   puma (~> 5.0)
   rack-mini-profiler (~> 2.0)
   rails (~> 6.1.4)
@@ -310,7 +312,7 @@ DEPENDENCIES
   shoulda-matchers (~> 3.1, >= 3.1.1)
   sidekiq
   spring
-  sqlite3 (~> 1.4)
+  sqlite3
   stripe
   turbolinks (~> 5)
   tzinfo-data
